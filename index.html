@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is It Spooktober?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<h1 id="result">No</h1>
+
+<script>
+    // Get the current month
+    const currentMonth = new Date().getMonth();
+
+    // If the current month is October (9 in zero-based index), display "Yes"
+    if (currentMonth === 9) {
+        document.getElementById('result').textContent = "Yes";
+    }
+</script>
+
+</body>
+</html>
